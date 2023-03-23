@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "173244943038",
+    "project_id": "marcobullo-mynotes",
+    "storage_bucket": "marcobullo-mynotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173244943038:android:830f88262b30d5ea6a6cef",
+        "android_client_info": {
+          "package_name": "it.marcobullo.mynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173244943038-bnvmoeivra2hfeloccu4rjhqsj2s1a80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQuAWHXTtqcW0EEANtWtaCDSM0_9hXEyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173244943038-bnvmoeivra2hfeloccu4rjhqsj2s1a80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
