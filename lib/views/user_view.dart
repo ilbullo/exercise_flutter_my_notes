@@ -13,16 +13,20 @@ class _UserViewState extends State<UserView> {
   @override
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
-    return Column(
-      children: [
-        const Text("Ciao"),
-        TextButton(
-            onPressed: () async {
-              await FirebaseAuth.instance.signOut();
-              print('Successfully logged out');
-            },
-            child: const Text('Logout'))
-      ],
+    return Scaffold(
+      appBar: AppBar(title: const Text('User Page')),
+      body: Column(
+        children: [
+          Text(user?.email ?? 'Ciao sconosciuto'),
+          TextButton(
+              onPressed: () {
+                FirebaseAuth.instance.signOut();
+                Navigator.of(context)
+                    .pushNamedAndRemoveUntil('/login/', (route) => false);
+              },
+              child: const Text('Logout'))
+        ],
+      ),
     );
   }
 }
